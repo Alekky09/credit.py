@@ -3,7 +3,10 @@ from cs50 import get_string
 
 while True:
 
-    c_num = get_string("Number: ")
+    while True:
+        c_num = get_string("Number: ")
+        if c_num.isdigit():
+            break
 
     if len(c_num)!=13 and len(c_num)!=15 and len(c_num)!=16:
         print("INVALID")
